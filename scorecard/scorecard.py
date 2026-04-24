@@ -33,8 +33,9 @@ MODEL        = "us.anthropic.claude-haiku-4-5-20251001-v1:0"
 AWS_PROFILE  = "bootcamp"
 AWS_REGION   = "us-west-2"
 
-SYSTEM_PROMPT = """You are a senior software architect reviewing proposed service extraction
-boundaries for a Spring Boot monolith called spring-music.
+SYSTEM_PROMPT = """You are a senior software architect reviewing proposed modernisation actions
+for a Spring Boot monolith called spring-music. An action may be an extraction (files move to
+a new service) OR a deletion (files are removed from the monolith entirely — also a valid answer).
 
 spring-music stores a catalog of music albums. It supports H2 / MySQL / PostgreSQL /
 MongoDB / Redis via Spring profiles selected at runtime. There is no dedicated service
